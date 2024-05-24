@@ -3,19 +3,6 @@ body{
     margin: auto;
     background-color: black;
 }
-main{
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    background-color: rgb(65, 62, 62);
-    text-align: center;
-}
-section{
-    padding-top: 2%;
-    padding-left: 6%;
-    padding-right: 6%;
-}
-
 .barra{
     padding-top: 1%;
     width: 100%;
@@ -58,6 +45,20 @@ li{
     }
 }
 
+main{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(65, 62, 62);
+    text-align: center;
+}
+section{
+    padding-top: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+
 .imagenes{
     display: flex;
     justify-content: space-evenly;
@@ -78,8 +79,6 @@ img{
     border-radius: 20px;
 }
 
-
-
 @keyframes imagenesA {
     0% {
         width: 20%;
@@ -94,22 +93,16 @@ img{
     height: 50%;
     }
 }
-
-button{
-    background-color: black;
-    border: none;
-    padding: 2%;
-    border-radius: 20px;
-}
-.pie{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
+/*ALTERA EL FOOTER Y EL .PIE*/
 footer{
     width: 100%;
     height: 100%;
     margin: auto;
     background-color: rgb(70, 65, 65);
     text-align: center;
+}
+.pie{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
