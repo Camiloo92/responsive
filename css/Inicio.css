@@ -4,7 +4,6 @@
     text-decoration: none;  
 }
 
-
 body{
     width: 75%;   
     margin: auto;
@@ -12,19 +11,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-main{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(65, 62, 62);
-}
-
-section{
-    padding-top: 2%;
-    padding-left: 6%;
-    padding-right: 6%;
-}
-
+/* modifica el nav*/
 .barra{
     padding-top: 1%;
     height: 70px;
@@ -35,6 +22,7 @@ section{
     display: flex;
     justify-content: space-evenly;
 }
+
 .l{
     padding-left: 10%;
     padding-right: 10%;
@@ -43,6 +31,7 @@ section{
     list-style: none;
     border-radius: 20px;
 }
+
 a{
     text-decoration: none;
     color: rgb(185, 185, 172);
@@ -52,6 +41,8 @@ a{
     background-color: rgb(10, 10, 10);
     animation: salto 1s infinite;
 }
+
+/* da efecto a los botones de la barra nav*/
 @keyframes salto {
     0% {
         transform: translateY(0px);
@@ -64,6 +55,7 @@ a{
     }
 }
 
+/* da efecto a los botones de la barra nav*/
 @keyframes desvanecido {
     0% {
         transform: translateX(0px);
@@ -76,7 +68,20 @@ a{
     }
 }
 
+/* modifica el main y le da herencia a sectión y a .barra*/
+main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(65, 62, 62);
+}
+/* le crea espacio a la sectión (imágenes)*/
+section{
+    padding-top: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
 
+/* permite que las imágenes sean responsive*/
 .imagenes{
     display: flex;
     justify-content: space-evenly;
@@ -95,8 +100,7 @@ img{
     box-shadow: 10px 20px 20px 5px rgb(0, 0, 0);
     border-radius: 20px;
 }
-
-
+/*efecto de las tarjetas expasión*/
 @keyframes imagenesA {
     0% {
         width: 20%;
@@ -112,21 +116,19 @@ img{
     }
 }
 
+/*Modifica el botón de suscripción*/
 button{
     background-color: black;
     border: none;
     padding: 2%;
     border-radius: 20px;
 }
+/*efecto al botón*/
 button:hover{
     animation: salto 1s infinite;
 }
-.pie{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
+/*afecta las tarjetas en su posición*/
 .cartas{
     display: flex;
     justify-content: center;
@@ -219,7 +221,7 @@ button:hover{
     transform: perspective(600px) rotateY(360deg);
 }
 
-
+/*afecta el footer y su clase .pie*/
 footer{
     width: 100%;
     height: 100%;
@@ -227,6 +229,10 @@ footer{
     background-color: rgb(70, 65, 65);
     text-align: center;
 }
-/*
-///////////////////////*/
+.pie{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 
