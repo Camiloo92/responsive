@@ -1,10 +1,11 @@
-
+/* OJO REVISAR SI DE BODY HASTA */
 body{
     display: flex;
     justify-content: center;
     background-color: black;
 }
-section{
+/* agregar una clase para pasar a style OJO revisar cual salto es y si no se daña el index.html*/
+.IS{
     width: 50%;
     height: 50%;
     background-color: rgb(27, 27, 27);
@@ -15,10 +16,12 @@ section{
     box-shadow: 0px 0px 25px #222;
     backdrop-filter: blur(10px);
 }
-h1{
+/* agregar una clase para pasar a style.CSS REVISAR SI FALTA LA ETIQUETA H2 Y AGREGAR EL JQEURY DE APERTURA DE NAVEGACIÓN*/
+.H11{
     font-size: 50px;
 }
-input{
+/* SI hay otro input en alguna de las páginas agregar una clase para pasar a style.CSS REVISAR */
+.formulario{
     width: 100%;
     border-radius: 10px;
     font-size: 15px;
@@ -26,8 +29,8 @@ input{
     outline-style: none;
     padding: 2%;
 }
-
-button{
+/* Agregar clase para pasar al style.css*/
+.button1{
     border-style: none;
     outline-style: none;
     border-radius: 5px;
