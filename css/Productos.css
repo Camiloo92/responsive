@@ -1,3 +1,4 @@
+/* OJO REVISAR SI LAS ETIQUETAS BODY HASTA .L:HOVER REALIZAN LAS MISMAS ACCIONES QUE EN EL INDEX*/
 body{
     width: 75%;
     margin: auto;
@@ -20,7 +21,9 @@ body{
     padding: 1%;
     list-style: none;
     border-radius: 20px;
+    list-style: none;
 }
+/* agregar una clase para pasar a style */
 a{
     text-decoration: none;
     color: rgb(185, 185, 172);
@@ -30,9 +33,7 @@ a{
     background-color: rgb(10, 10, 10);
     animation: salto 1s;
 }
-li{
-    list-style: none;
-}
+/* agregar una clase para pasar a style OJO revisar cual salto es y si no se daña el index.html*/
 @keyframes salto {
     0% {
         transform: translateY(0px);
@@ -44,32 +45,28 @@ li{
         transform: translateY(0px);
     }
 }
-
-main{
+/* agregar una clase/id para pasar a style */
+main{ 
     width: 100%;
     height: 100%;
     margin: auto;
     background-color: rgb(65, 62, 62);
     text-align: center;
 }
+/* agregar una clase para pasar a style */
 section{
     padding-top: 2%;
     padding-left: 6%;
     padding-right: 6%;
 }
-
-
-.imagenes{
+/* agregar una clase para pasar a style OJO revisar las etiquetas de img de index.html y el registrarse.html  */
+.imagenes2{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-img:hover{
-    animation: imagenesA 2s;
-}
-
-img{
+img2{
     width: 200px;
     height: 300px;
     background-position: center;
@@ -77,6 +74,10 @@ img{
 	background-size: cover;
     box-shadow: 10px 20px 20px 5px rgb(0, 0, 0);
     border-radius: 20px;
+}
+/* agregar una clase para pasar a style */
+img2:hover{
+    animation: imagenesA 2s;
 }
 
 @keyframes imagenesA {
@@ -93,16 +94,5 @@ img{
     height: 50%;
     }
 }
-/*ALTERA EL FOOTER Y EL .PIE*/
-footer{
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    background-color: rgb(70, 65, 65);
-    text-align: center;
-}
-.pie{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
+
+
