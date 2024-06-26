@@ -3,8 +3,7 @@
     padding: 0;
     text-decoration: none;  
 }
-
-body{
+.ideot2{
     width: 75%;   
     margin: auto;
     background-color: rgb(63, 113, 63);
@@ -162,7 +161,7 @@ button:hover{
 }
 
 .card .front .IMAGENTAR{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
