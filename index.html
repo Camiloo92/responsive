@@ -9,8 +9,83 @@
   <link rel="stylesheet" href="css/style.css" />
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="./js/jquery.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="./js/jquery.easing.1.3.js"></script>
+ 
+<!-- script para realizar el menú lateral expansivo -->
+<script>
+  $(document).ready(function() {
+      
+      $("#menu").hover(function(){
+          $(this).stop(1).animate({
+              left:"0px"
+          },500,"easeInSine")
+      },
+  function(){
+      $(this).animate({
+          left:"-150px"
+      },1500,"easeOutBounce")
+  })
+  })
+</script>
+<!-- script que cambia las imágenes y permite "comprar" -->
+<script>
+  $(document).ready(function(){
+      var parrafo = document.getElementById('img44');
+      parrafo.addEventListener('click', cerrar)
+
+      var parrafo2 = document.getElementById("COMPRAR")
+      parrafo2.addEventListener("click", cambio)
+
+      var parrafo = document.getElementById('img45');
+      parrafo.addEventListener('click', cerrar2)
+
+      var parrafo2 = document.getElementById("COMPRAR2")
+      parrafo2.addEventListener("click", cambio2)
+      
+      var parrafo = document.getElementById('img46');
+      parrafo.addEventListener('click', cerrar3)
+
+      var parrafo2 = document.getElementById("COMPRAR3")
+      parrafo2.addEventListener("click", cambio3)
+
+      var parrafo = document.getElementById('img47');
+      parrafo.addEventListener('click', cerrar4)
+
+      var parrafo2 = document.getElementById("COMPRAR4")
+      parrafo2.addEventListener("click", cambio4)
+  })
+
+     
+
+  const cerrar = ()=>{
+      $("#img44").replaceWith('<img src="./imagenes/CALL OF DUTY.jfif">');
+  }
+  const cambio = ()=>{
+      $('#COMPRAR').replaceWith("<h1>COMPRADO</h1>");
+  }
+  const cerrar2 = ()=>{
+      $("#img45").replaceWith('<img src="./imagenes/jalo.jfif">');
+  }
+  const cambio2 = ()=>{
+      $('#COMPRAR2').replaceWith("<h1>COMPRADO</h1>");
+  }
+  const cerrar3 = ()=>{
+      $("#img46").replaceWith('<img src="./imagenes/six.jfif">');
+  }
+  const cambio3 = ()=>{
+      $('#COMPRAR3').replaceWith("<h1>COMPRADO</h1>");
+  }
+  const cerrar4 = ()=>{
+      $("#img47").replaceWith('<img src="./imagenes/valorant2.jfif">');
+  }
+  const cambio4 = ()=>{
+      $('#COMPRAR4').replaceWith("<h1>COMPRADO</h1>");
+  }
+
+</script>
+<!--  -->
+
 </head>
 
 <body class="ideot2">
@@ -23,6 +98,12 @@
       <li class="l"><a href="Registrarse.html">Registrarse</a></li>
     </ul>
   </header>
+
+  <div id="menu">
+    <img src="Imagenes/Crash.png" alt=""><p>CRASH</p>
+    <img src="Imagenes/Halo.jpg" alt=""><p>HALO</p>
+    <img src="Imagenes/COLDWAR.png" alt=""><p>COLDWAR</p>
+  </div>
 
   <main>
     <section>
@@ -53,12 +134,22 @@
         ¿Qué estás esperando? ¡Explora WGameW y descubre un mundo de
         diversión!
       </h2>
+      
+
       <div class="imagenes">
-        <img src="Imagenes/COD.jpg" alt="" />
-        <img src="Imagenes/Halo.jpg" alt="" />
-        <img src="Imagenes/R6.jpg" alt="" />
-        <img src="Imagenes/Valorant.jpg" alt="" />
+        <img id="img44" src="Imagenes/COD.jpg" alt="" /><br>
+        <p id="COMPRAR">COMPRAR</p><br>
+        <img id="img45" src="Imagenes/Halo.jpg" alt="" /><br>
+        <p id="COMPRAR2">COMPRAR</p>
+        <img id="img46" src="Imagenes/R6.jpg" alt="" /><br>
+        <p id="COMPRAR3">COMPRAR</p>
+        <img id="img47" src="Imagenes/Valorant.jpg" alt="" /><br>
+        <p id="COMPRAR4">COMPRAR</p>
+
       </div>
+
+      
+    
 
 
       <br />
