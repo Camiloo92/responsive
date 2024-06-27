@@ -105,6 +105,9 @@ background-size: cover;
   box-shadow: 10px 20px 20px 5px rgb(0, 0, 0);
   border-radius: 20px;
 }
+p #COMPRAR{
+  text-align: center;
+}
 /*efecto de las tarjetas expasión*/
 @keyframes imagenesA {
   0% {
@@ -340,5 +343,24 @@ background-size: cover;
   background-color: rgb(84, 84, 88);
 }
 
+#menu{
+  width: 180px;
+  background-color:rgb(18, 71, 92);
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: -100px;
 
+  }
+#menu img{
+  width: 150;
+  height: 100;
+}
+#menu p{
+  font-style: italic;
+  text-align: justify;
+  padding: 8px;
+  color: aliceblue;
+  right: 120px;
+}
 
